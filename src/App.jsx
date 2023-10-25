@@ -1,9 +1,9 @@
 import './App.css';
 import {React, useState} from "react";
-import NavBar from "./components/navbar/navbar.js";
-import GameList from "./components/GameListShowcase/gameList.js";
-import GameContent from "./components/GameContent/gameContent.js";
-import {games} from "./components/GameData.js";
+import NavBar from "./components/navbar/navbar.jsx";
+import GameList from "./components/GameListShowcase/gameList.jsx";
+import GameContent from "./components/GameContent/gameContent.jsx";
+import {games} from "./components/GameData.jsx";
 function App() {
 	const [game, setGame] = useState(games.lostTrooper);
 	const [imgIndex, setImgIndex] = useState(0)

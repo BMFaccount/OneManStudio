@@ -7,7 +7,7 @@ function GameContent({game, imgUseState}){
     function GetImgSrcPath(){
         switch(game.name){
             case "Lost Trooper":
-                return "./images/gamescreenshots/lostTrooperScreens/"
+                return "./images/gamescreenshots/lostTrooperScreens/" //"./images/gamescreenshots/lostTrooperScreens/
             case "Train your penguin":
                 return "./images/gamescreenshots/penguinTrainScreens/"
             case "Castle crusher":

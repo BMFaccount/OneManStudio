@@ -1,7 +1,7 @@
 import React from "react";
 import './gameList.css';
 import '../../App.css';
-import {games, otherGames} from "../GameData.js";
+import {games, otherGames} from "../GameData.jsx";
 function GetGameObjByName(name, games){
     return Object.values(games).find(game => game.name === name)
 }

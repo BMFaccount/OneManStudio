@@ -24,28 +24,28 @@ export const games = {
 export const otherGames = {
     assembler : {
         name: "Assembler",
-        iconPath: "lostrooper.png",
+        iconPath: "assembler.png",
         stats: ["Upcoming title", "6 months WIP", "Desktop game"],
         mediaIcons: ["unity", "youtube"],
         imgAndGifsPaths: ["image1.png", "image2.png", "image3.gif", "image4.gif"]
     },
     findStickBug : {
         name: "Find Stick Bug",
-        iconPath: "penguintrain.png",
+        iconPath: "findstickbug.png",
         stats: ["Upcoming title", "3 weeks WIP", "Mobile game"],
         mediaIcons: ["unity", "youtube", "google-play"],
         imgAndGifsPaths: ["image1.png"]
     },
     fruitySplit : {
         name: "Fruity Split",
-        iconPath: "castlecrusher.png",
+        iconPath: "fruitysplit.png",
         stats: ["Upcoming title", "2 weeks WIP", "Mobile game"],
         mediaIcons: ["unity", "youtube", "google-play"],
         imgAndGifsPaths: ["image1.png", "image2.gif", "image3.gif", "image4.png"]
     },
     sliceNFruit : {
         name: "Slice'n'fruit",
-        iconPath: "castlecrusher.png",
+        iconPath: "slicenfruit.png",
         stats: ["Upcoming title", "2 weeks WIP", "Mobile game"],
         mediaIcons: ["unity", "youtube", "google-play"],
         imgAndGifsPaths: ["image1.png", "image2.gif", "image3.gif", "image4.png"]
