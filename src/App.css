@@ -1,42 +1,62 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body{
+    background-color: #1b2838;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+.LogoFont{
+    color: #0B2A3F;
+    font-size: 70px;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Gill Sans Nova Cond Ultra Bold', sans-serif;
+    /*mix-blend-mode: exclusion;*/
+    position: relative;
+    bottom: 20px;
+    right: 10px;
+}
+.link{
+    color: #0B2A3F;
+    font-family: 'Gill Sans Nova Cond Ultra Bold', sans-serif;
+    text-decoration: none;
+}
+.App{
+    display: grid;
+    grid-template-columns: 1.4fr 5fr;
+    grid-template-rows: 1fr;
+}
+.RightContentContainer{
+    display: flex;
+    flex-direction: column;
+}
+.bluefont{
+    color: #3591db;
+    font-family: 'Gill Sans Nova Cond Ultra Bold', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin: 0px;
+}
+.blueroundbox{
+    background-color: #5ab5ff3d;
+    border-radius: 10px;
+    width: fit-content;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+/*colours of site*/
+.backgroundColor{
+    background-color: #1b2838 !important;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.setColorToBackgroundColor{
+    color: #1b2838 !important;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.setColorToPrimaryColor{
+    color: #66c0f4 !important;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.setBackgroundColorToPrimaryColor{
+    background-color: #66c0f4 !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.setBackgroundColorToSecondaryColor{
+    background-color: #2a475e !important;
 }
