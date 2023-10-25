@@ -42,8 +42,8 @@ function GameViewContainer({game, setGame, setImgIndex}){
         <>
             <div onClick={() => handleClick(name)} className="GameViewContainer">
                 <img src={imgLinkString}></img>
-                <div className="GameTitle backgroundColor">
-                    <h1 className="setColorToPrimaryColor">{name}</h1>
+                <div className="setBackgroundColorToSecondaryColor">
+                    <a className="setColorToBackgroundColor">{name}</a>
                 </div>
             </div>
         </>

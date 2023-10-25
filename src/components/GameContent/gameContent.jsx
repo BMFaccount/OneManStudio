@@ -2,6 +2,7 @@ import {React, useState, useEffect} from "react";
 import './gameContent.css';
 import './socialMedia.css';
 let imgAndGifsPaths = [];
+let imgSelectionSizeClass = "";
 
 function GameContent({game, imgUseState}){
     function GetImgSrcPath(){
@@ -12,12 +13,25 @@ function GameContent({game, imgUseState}){
                 return "./images/gamescreenshots/penguinTrainScreens/"
             case "Castle crusher":
                 return "./images/gamescreenshots/castleCrusherScreens/"
+            case "Find Stick Bug":
+                return "./images/gamescreenshots/findstickbugscreens/"
+            case "Fruity Split":
+                return "./images/gamescreenshots/fruitysplitscreens/"
+            case "Assembler":
+                return "./images/gamescreenshots/assemblerscreens/"
+            case "Slice'n'fruit":
+                return "./images/gamescreenshots/slicenfruitscreens/"
         }
     }
     let [imgSrcPath, setimg] = useState("");
     useEffect(() => {
         setimg(GetImgSrcPath())
         imgAndGifsPaths = game.imgAndGifsPaths;
+        if(game.type == "mobile"){
+            imgSelectionSizeClass = " mobileImgSelectionSize";
+        }else{
+            imgSelectionSizeClass = "";
+        }
     }, [game])
     return (
         <>
@@ -36,7 +50,7 @@ function GameContent({game, imgUseState}){
                             imgAndGifsPaths.map((imgPath, index) => {
                                 return (
                                     <>
-                                        <img onClick={() => imgUseState.setImgIndex(index)} className={imgUseState.imgIndex == index? "SelectedImgStyle" : ""} src={imgSrcPath + imgPath}/>
+                                        <img onClick={() => imgUseState.setImgIndex(index)} className={(imgUseState.imgIndex == index? "SelectedImgStyle" : "") + imgSelectionSizeClass} src={imgSrcPath + imgPath}/>
                                     </>
                                 )
                             })
