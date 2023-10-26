@@ -4,6 +4,7 @@
    transform-style: preserve-3d;
    flex-direction: row-reverse;
    align-items: flex-end;
+   padding: 0px;
 }
 .SocialMediaLinks ul li {
   position: relative;
@@ -117,3 +118,30 @@ li.epic:hover span{
 .customMediaIcon{
     height: 40px !important;
 }
+@media (max-width: 1403px) {  
+    .SocialMediaLinks ul{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+        row-gap: 4vh;
+    }
+    .SocialMediaLinks ul li{
+      width: 4vw;
+      height: 5vh;
+    }
+}    
+@media (max-height: 709px) {  
+  .SocialMediaLinks ul{
+      flex-direction: row-reverse;
+      align-items: center;
+      margin: 0px;
+      padding: 0px;
+      row-gap: 4vh;
+  }
+  .SocialMediaLinks ul li{
+    margin: 10px;
+    width: 6vw;
+    height: 8vh;
+  }
+}    

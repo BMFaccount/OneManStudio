@@ -24,7 +24,7 @@ body{
 }
 .App{
     display: grid;
-    grid-template-columns: 1.4fr 5fr;
+    grid-template-columns: 20vw auto;
     grid-template-rows: 1fr;
 }
 .RightContentContainer{
@@ -60,3 +60,26 @@ body{
 .setBackgroundColorToSecondaryColor{
     background-color: #2a475e !important;
 }
+@media (max-width: 942px) {  
+    .App{
+        grid-template-rows: 20vh auto;
+        grid-template-columns: auto;
+    }
+    .GameListContainer{
+        grid-template-columns: auto !important;
+        grid-template-rows: auto 5vh !important;
+        margin-top: 0px !important;
+        height: 100% !important;
+    }
+    .GameList{
+        flex-direction: row !important;
+    }
+    .OtherGames{
+        flex-direction: row !important;
+    }
+    .NavMenuContainer img{
+        width: 10vw !important;
+        height: 10vh !important;
+        bottom: 23px !important;
+    }
+}    

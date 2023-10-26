@@ -1,7 +1,7 @@
 .GameListContainer{
     display: grid;
     width: auto;
-    height: 100vh;
+    height: auto;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
     margin-top: 50px;
@@ -17,14 +17,16 @@
     align-items: center;
 }
 .GameContainer{
-    width: 300px;
-    height: 150px;
+    width: 30vh;
+    height: 16vh;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
     transform: perspective(1500px) rotateY(15deg);
     border-radius: 1rem;
-    box-shadow: rgb(102 192 244) 0px 25px 50px -12px;
+    box-shadow: rgb(102 192 244) 0px 25px 50px -20px;
     transition: transform 1s ease 0s;
   
     &:hover {
@@ -38,26 +40,45 @@
     border-radius: 15px;
 }
 .GameTitle{
-    position: relative;
-    bottom: 20%;
     background-color: #0B2A3F;
-    width: 70%;
-    left: 14%;
-    border-radius: 10px 10px 0px 0px;
+    width: fit-content;
+    border-radius: 5px 5px 0px 0px;
+    align-self: center;
+    border-radius: 10px;
 }
 .GameTitle h1{
     color: #3591db;
     font-family: 'Gill Sans Nova Cond Ultra Bold', sans-serif;
     font-size: 25px;
     text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0px;
 }
 .OtherGames{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 20px;
+    row-gap: 2vh;
 }
+@media (max-height: 855px) {  
+    .OtherGames{  
+        row-gap: 0px;
+    } 
+}    
+@media (max-height: 653px) {  
+    .GameViewContainer{  
+        grid-template-columns: 50px !important;
+    } 
+    .GameViewContainer div{
+        display: none !important;
+    }
+    .OtherGames{  
+        flex-direction: row;
+        column-gap: 10px;
+    } 
+}    
 .GameViewContainer{
     display: grid;
     align-items: center;
