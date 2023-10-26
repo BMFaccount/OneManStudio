@@ -5,6 +5,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
     margin-top: 50px;
+    row-gap: 4vh;
 }
 .GameList{
     display: flex;
